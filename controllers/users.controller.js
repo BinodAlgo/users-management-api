@@ -22,7 +22,17 @@ const getUserById = (req,res)=>{
 }
 
 
+// Create a new user 
+const createUser = (req,res)=>{
+  const {name,email}  = req.body;
+  pool.query('INSERT INTO users (name,email) VALUES($1, $2) RETURNING *',[name,email],(error,result)=>{
+    if(error) throw error 
+    res.status(201).send(`User added with ID: ${result.rows[0].id}`)
+  })
+}
+
 module.exports = {
   getUsers,
-  getUserById
+  getUserById,
+  createUser 
 }
