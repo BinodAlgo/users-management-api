@@ -10,7 +10,19 @@ const getUsers = (req,res)=>{
 
 }
 
+// GET a user by id 
+const getUserById = (req,res)=>{
+  const {id} = req.params
+  pool.query('SELECT * FROM users WHERE ID =$1',[id],(error,result)=>{
+    if(error){
+      throw error 
+    }
+    res.status(200).json(result.rows);
+  })
+}
+
 
 module.exports = {
-  getUsers 
+  getUsers,
+  getUserById
 }
