@@ -43,7 +43,7 @@ Users
 
 ### Testing 
 
-You can test the API using tools like curl or Postman. Here's an example curl command to create a new user:
+You can test the API using tools like curl or Postman. Here's an example curl command to perform CURD operations on users:
 1. To get all users: 
 ```sh 
 curl -X GET http://localhost:3000/users
