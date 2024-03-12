@@ -48,9 +48,22 @@ const updateUser = (req, res) => {
   )
 }
 
+
+// Delete a user by id 
+const deleteUser = (req,res)=>{
+  const {id} = req.params;
+  pool.query('DELETE FROM users WHERE id = $1',[parseInt(id)],(error,result)=>{
+    if(error){
+      throw new Error(error)
+    }
+    res.status(200).send(`User deleted with ID: ${id}`);
+  })
+}
+
 module.exports = {
   getUsers,
   getUserById,
   createUser,
-  updateUser
+  updateUser,
+  deleteUser
 }
