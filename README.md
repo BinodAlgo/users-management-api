@@ -21,7 +21,7 @@ This is a RESTful API built with Node.js, Express, and PostgreSQL. It provides a
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/BinodAlgo/users-management-api.git
 ``` 
 2. Install the dependencies:
 ```sh 
@@ -43,7 +43,7 @@ Users
 
 ### Testing 
 
-You can test the API using tools like curl or Postman. Here's an example curl command to create a new user:
+You can test the API using tools like curl or Postman. Here's an example curl command to perform CURD operations on users:
 1. To get all users: 
 ```sh 
 curl -X GET http://localhost:3000/users
