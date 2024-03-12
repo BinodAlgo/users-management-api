@@ -3,5 +3,16 @@
     "cors": "^2.8.5",
     "express": "^4.18.3",
     "pg": "^8.11.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "restful_api_project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
