@@ -32,6 +32,19 @@ npm install
 npm run start
 ``` 
 
+### Environment Variables
+
+To configure the database credentials for this Node.js `User Management API` , you can create a `.env` file based on the provided `.env.example` file. The `.env.example` file serves as a reference for adding environment variables to the current Node.js app process objects.
+
+Here's an example of how to use the `.env` file:
+
+1. Create a new file named `.env` in the root directory of the project.
+2. Copy the contents of the `.env.example` file into the `.env` file.
+3. Replace the placeholder values in the `.env` file with your actual database credentials.
+
+Make sure to keep the `.env` file secure and never commit it to version control, as it may contain sensitive information.
+
+
 ### API Endpoints
 Users 
 - GET `/users`: Get all users
@@ -77,4 +90,5 @@ Contributions are welcome! Please read the [contributing guide](https://www.data
 This project is licensed under the MIT License.
 
 ### Contact 
-If you have any question or feedback, feel free to contact me or [mail me](mailto:achabinod1112@gmail.com). You can also visit my website [here](https://www.binodcodemaster.com) for more contact info.
+If you have any question or feedback, feel free to contact me or [mail me](mailto:achabinod1112@gmail.com). You can also vi
+sit my website [here](https://www.binodcodemaster.com) to see more interesting projects.
