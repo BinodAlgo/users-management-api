@@ -6,7 +6,7 @@ This is a RESTful API built with Node.js, Express, and PostgreSQL. It provides a
 
 ## Features
 
-- CRUD operations: The API sup3000s creating, reading, updating, and deleting users.
+- CRUD operations: The API supports creating, reading, updating, and deleting users.
 - Error handling: The API provides meaningful error messages when things go wrong.
 - Validation: The API validates input data before processing it.
 
@@ -66,7 +66,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{"name":"NewName", "email":"
 
 5. To delete a user by ID:
 ```bash 
-curl -X PUT -H "Content-Type: application/json" -d '{"name":"NewName", "email":"newemail@example.com"}' http://localhost:3000/users/1
+curl -X DELETE -H "Content-Type: application/json" -d '{"name":"NewName", "email":"newemail@example.com"}' http://localhost:3000/users/1
 ```
 
 ### Contributing
@@ -77,4 +77,4 @@ Contributions are welcome! Please read the [contributing guide](https://www.data
 This project is licensed under the MIT License.
 
 ### Contact 
-If you have any question or feedback, feel free to contact me or [mail me](mailto:achabinod1112@gmail.com). You can also visit my website[here](https://www.binodcodemaster.com) for more contact info.
+If you have any question or feedback, feel free to contact me or [mail me](mailto:achabinod1112@gmail.com). You can also visit my website [here](https://www.binodcodemaster.com) for more contact info.
